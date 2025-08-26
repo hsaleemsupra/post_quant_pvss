@@ -15,7 +15,7 @@ Our schemes rely on the [Lattice-IBE library](https://github.com/tprest/Lattice-
 On **macOS**, you can install NTL via Homebrew:
 
 ```bash
-brew install ntl gmp
+brew install ntl
 ```
 
 Make sure GMP is also installed (e.g., `brew install gmp`).
@@ -36,7 +36,10 @@ After these adjustments, you should be able to build the Lattice-IBE library suc
 
 ### PVSS Benchmarks
 
-Adjust n and t as required in test_share_basic in pqppvss/prot_pvss_hash_ibe.rs and pqppvss/prot_pvss_pedcom_ibe.rs. Then run the benchmarks as follows:
+Adjust n and t as required in test_share_basic in the following files:
+
+- `pqppvss/prot_pvss_hash_ibe.rs`  
+- `pqppvss/prot_pvss_pedcom_ibe.rs`  
 
 ```bash
 cd pqppvss
