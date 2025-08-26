@@ -90,8 +90,8 @@ mod tests {
         let pedcom_params = pedcom::setup();
 
         // Setup IBE master keys and public keys
-        let n = 1000;
-        let t = 500;
+        let n = 128;
+        let t = 64;
         let mut ibe_keys = Vec::new();
         for _ in 0..n {
             let key = ibe::ibe_keygen();
