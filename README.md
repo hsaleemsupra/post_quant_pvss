@@ -36,9 +36,12 @@ After these adjustments, you should be able to build the Lattice-IBE library suc
 
 ### PVSS Benchmarks
 
+Adjust n and t as required in test_share_basic in pqppvss/prot_pvss_hash_ibe.rs and pqppvss/prot_pvss_pedcom_ibe.rs. Then run the benchmarks as follows:
+
 ```bash
 cd pqppvss
 cargo test --release --package pqppvss --lib -- prot_pvss_hash_ibe::tests::test_share_basic --exact --show-output
+cargo test --release --package pqppvss --lib -- prot_pvss_pedcom_ibe::tests::test_share_basic --exact --show-output
 ```
 
 ### Private Polling Benchmarks
