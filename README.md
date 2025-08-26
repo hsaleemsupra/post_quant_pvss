@@ -48,12 +48,15 @@ cd pqppvss
 cargo test --release --package pqppvss --lib -- prot_pvss_hash_ibe::tests::test_share_basic --exact --show-output
 ```
 
+
 ```bash
 cd pqppvss
 cargo test --release --package pqppvss --lib -- prot_pvss_pedcom_ibe::tests::test_share_basic --exact --show-output
 ```
 
 ### Private Polling Benchmarks
+
+To run the polling benchmarks:
 
 ```bash
 cd private-polling/rust/private_polling/
