@@ -41,9 +41,15 @@ Adjust n and t as required in test_share_basic in the following files:
 - `pqppvss/prot_pvss_hash_ibe.rs`  
 - `pqppvss/prot_pvss_pedcom_ibe.rs`  
 
+Then to run the benchmarks:
+
 ```bash
 cd pqppvss
 cargo test --release --package pqppvss --lib -- prot_pvss_hash_ibe::tests::test_share_basic --exact --show-output
+```
+
+```bash
+cd pqppvss
 cargo test --release --package pqppvss --lib -- prot_pvss_pedcom_ibe::tests::test_share_basic --exact --show-output
 ```
 
