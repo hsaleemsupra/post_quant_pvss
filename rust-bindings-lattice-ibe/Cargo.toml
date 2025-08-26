@@ -1,0 +1,12 @@
+[package]
+name = "rust-bindings"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cxx      = "1.0.160"
+autocxx  = { version = "0.30.0"}
+
+[build-dependencies]
+autocxx-build = "0.30.0"
+miette = { version = "7.6.0", features = ["fancy"] } # optional but gives nicer error messages!

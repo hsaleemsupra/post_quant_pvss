@@ -1,0 +1,28 @@
+[net]
+retry = 3                 # network retries
+git-fetch-with-cli = true # use the `git` executable for git operations
+
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = [
+    "--cfg",
+    "tokio_unstable",           # because usage of `disable_lifo_slot` api
+    "-C",
+    "force-frame-pointers=yes",
+    "-C",
+    "force-unwind-tables=yes",
+    "-C",
+    "linker=clang",
+    "-C",
+    "link-arg=-fuse-ld=lld",
+]
+
+[build]
+rustflags = [
+    "--cfg",
+    "tokio_unstable",           # because usage of `disable_lifo_slot` api
+    "-C",
+    "force-frame-pointers=yes",
+    "-C",
+    "force-unwind-tables=yes",
+]

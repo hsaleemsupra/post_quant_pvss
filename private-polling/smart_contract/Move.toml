@@ -1,0 +1,16 @@
+[package]
+name = "private-polling-smart-contract"
+version = "1.0.1"
+authors = []
+
+[addresses]
+Sender = "0xc7fedcfa464222f99134a43e42863fc1ea1a9bbe847735ef481906a702be3148"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "main"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]

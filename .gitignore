@@ -1,0 +1,23 @@
+# Rust project
+/private-polling/rust/private_polling/target/
+/pqppvss/target/
+
+# Aptos Move project
+/private-polling/smart_contract/build/
+# General files
+**/.DS_Store
+**/Thumbs.db
+**/.idea/
+**/.vscode/
+**/*.swp
+**/*.bak
+**/*.tmp
+**/*.old
+
+# macOS specific
+*.DS_Store
+**/.DS_Store
+._*
+
+# Linux specific
+*~
